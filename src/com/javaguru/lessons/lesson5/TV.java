@@ -7,6 +7,22 @@ class TV {
     private boolean turnedOn;
     private int currentChannel;
 
+    public TV() {
+    }
+
+    public TV(boolean turnedOn, int currentChannel) {
+        this.turnedOn = turnedOn;
+        this.currentChannel = currentChannel;
+    }
+
+    public void setTurnedOn(boolean turnedOn) {
+        this.turnedOn = turnedOn;
+    }
+
+    public void setCurrentChannel(int currentChannel) {
+        this.currentChannel = currentChannel;
+    }
+
     public boolean isTurnedOn() {
         return turnedOn;
     }

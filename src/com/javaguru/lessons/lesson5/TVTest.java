@@ -6,6 +6,7 @@ class TVTest {
         TVTest testRunner = new TVTest();
         testRunner.test1();
         testRunner.test2();
+        testRunner.test3();
     }
 
     void test1() {
@@ -31,6 +32,20 @@ class TVTest {
             System.out.println("Test 2: OK");
         } else {
             System.out.println("Test 2: FAIL. Expected: " + expected + ", actual: " + actual);
+        }
+    }
+
+    void test3() {
+        TV victim = new TV();
+        victim.turnOn();
+        victim.nextChannel();
+        victim.nextChannel();
+
+        TV expectedResult = new TV(true, 2);
+        if (victim.equals(expectedResult)) {
+            System.out.println("Test 3: OK");
+        } else {
+            System.out.println("Test 2: FAIL. Expected: " + expectedResult + ", actual: " + victim);
         }
     }
 }
