@@ -1,4 +1,4 @@
-package com.javaguru.lessons.lesson10;
+package com.javaguru.lessons.lesson10.unchecked;
 
 class User {
 
